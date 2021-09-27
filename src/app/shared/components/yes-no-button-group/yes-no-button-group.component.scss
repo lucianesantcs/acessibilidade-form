@@ -1,0 +1,25 @@
+$button-pressed-background: #0fc7ff;
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    label {
+        display: block;
+        margin: 0.5rem;
+    }
+    .button {
+        border: 1px solid #aeb6c6;
+        padding: 0.5rem 0.75rem;
+        margin: 0;
+        color: #000;
+        background-color: #fff;
+        cursor: pointer;
+
+        &.button-pressed {
+            background-color: $button-pressed-background;
+            border-color: $button-pressed-background;
+            box-sizing: inset 0 0 5px 0 rgba(0,0,0,0.2);
+        }
+    }
+}
