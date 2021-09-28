@@ -1,8 +1,10 @@
 <main>
   <h1>Form</h1>
-  <app-yes-no-button-group
-    [(value)]="yesNoAnswer"
-    label="Are you good enough in Angular?"
-  ></app-yes-no-button-group>
-  <span>yesNoAnswer value: {{ yesNoAnswer }}</span>
+  <form [formGroup]="form" (ngSubmit)="submit()">
+    <app-yes-no-button-group
+      label="Are you good enough in Angular?"
+      formControlName="yesNoAnswer"
+    ></app-yes-no-button-group>
+    <button>Submit</button>
+  </form>
 </main>

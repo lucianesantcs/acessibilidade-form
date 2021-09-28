@@ -21,3 +21,12 @@ main {
     justify-content: center;
     flex-direction: column;
 }
+
+button {
+    border: 1px solid #aeb6c6;
+    padding: 0.5rem 0.75rem;
+    margin: 1rem 0;
+    color: #000;
+    background-color: #fff;
+    cursor: pointer;
+}
