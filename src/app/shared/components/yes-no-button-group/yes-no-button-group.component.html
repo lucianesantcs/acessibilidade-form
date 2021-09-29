@@ -5,7 +5,7 @@
   <label [attr.id]="id">{{ label }}</label>
   <button
     role="radio"
-    [att.aria-checked]="value === options.YES"
+    [attr.aria-checked]="value === options.YES"
     type="button"
     class="button button-yes"
     [class.button-pressed]="value === options.YES"
@@ -15,7 +15,7 @@
   </button>
   <button
     role="radio"
-    [att.aria-checked]="value === options.NO"
+    [attr.aria-checked]="value === options.NO"
     type="button"
     class="button button-no"
     [class.button-pressed]="value === options.NO"
