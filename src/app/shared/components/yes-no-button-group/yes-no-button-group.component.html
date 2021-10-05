@@ -8,6 +8,7 @@
     keyboardManagerItem
     (focused)="activate(options.YES)"
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     [tabindex]="value === options.YES || value === null ? 0 : -1"
     [attr.aria-checked]="value === options.YES"
     type="button"
@@ -21,6 +22,7 @@
     (focused)="activate(options.NO)"
     keyboardManagerItem
     role="radio"
+    [attr.disabled]="disabled ? disabled : null"
     [tabindex]="value === options.NO || value === null ? 0 : -1"
     type="button"
     class="button button-no"

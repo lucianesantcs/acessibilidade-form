@@ -2,6 +2,7 @@
   <h1>Form</h1>
   <form [formGroup]="form" (ngSubmit)="submit()">
     <app-yes-no-button-group
+      [disabledControl]="false"
       label="Are you good enough in Angular?"
       formControlName="yesNoAnswer"
     ></app-yes-no-button-group>
