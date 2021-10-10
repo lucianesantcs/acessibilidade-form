@@ -8,7 +8,7 @@ Projeto desenvolvido no curso de Angular na Alura. Construído um simples form, 
 
 ### Techs
 
-- Angular v.12
+- Angular v.10
 
 ### Author
 
